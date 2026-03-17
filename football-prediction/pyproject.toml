@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "football_prediction"
+version = "0.1"
+description = "A Python package for football match prediction."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+  { name = "Hasan Abd-Alkareem" },
+]
+
+dependencies = []
