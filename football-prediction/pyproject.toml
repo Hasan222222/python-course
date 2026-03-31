@@ -4,13 +4,20 @@ build-backend = "hatchling.build"
 
 [project]
 name = "football_prediction"
-version = "0.1"
+version = "0.1.0"
 description = "A Python package for football match prediction."
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
 authors = [
-  { name = "Hasan Abd-Alkareem" },
+    { name = "Hasan Abd-Alkareem" },
+]
+dependencies = [
+    "pandas",
+    "scikit-learn",
+    "numpy",
+    "matplotlib",
 ]
 
-dependencies = []
+[tool.hatch.build.targets.wheel]
+packages = ["src/football_prediction"]
